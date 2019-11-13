@@ -127,16 +127,21 @@ Baby.prototype.play = function(){
 let k = new Baby ('dave', 18, 'rattle');
 console.log(k)
 console.log(k.play());
-// Baby.prototype
+
 
 /* 
   TASK 4
 
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
+  1. Principle 1: Window/Global Object Binding In the global execution context (outside of any function),
+   this refers to the global object whether in strict mode or not
+  2. Principle 2: Implicit Binding -- The object that is standing before the dot is what this keyword will be bound to.
+  3. Principle 3: New binding  --A brand new empty object gets created
+new empty object gets linked to prototype property of that function
+same new empty object gets bound as this keyword for execution context of that function call
+if that function does not return anything then it implicit returns this object.
+
+  4. Principle 4: Explicit binding -- Explicit binding of this occurs when .call(), .apply(), or .bind() are used on a function.
 */
 
 ///////// END OF CHALLENGE /////////
